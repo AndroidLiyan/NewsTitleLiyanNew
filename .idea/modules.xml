@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NewsTitleLiyanNew.iml" filepath="$PROJECT_DIR$/NewsTitleLiyanNew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PushSDK/PushSDK.iml" filepath="$PROJECT_DIR$/PushSDK/PushSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imageloader/imageloader.iml" filepath="$PROJECT_DIR$/imageloader/imageloader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jcvideoplayer-lib/jcvideoplayer-lib.iml" filepath="$PROJECT_DIR$/jcvideoplayer-lib/jcvideoplayer-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/librarypulltorefresh/librarypulltorefresh.iml" filepath="$PROJECT_DIR$/librarypulltorefresh/librarypulltorefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraryslidingmenu/libraryslidingmenu.iml" filepath="$PROJECT_DIR$/libraryslidingmenu/libraryslidingmenu.iml" />
+    </modules>
+  </component>
+</project>

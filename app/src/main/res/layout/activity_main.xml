@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor">
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/colorGrey"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/lin_home"
+            style="@style/lin_home_style">
+
+            <ImageView
+                android:id="@+id/home_frag_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/b_newhome_tabbar"/>
+
+            <TextView
+                android:id="@+id/home_frag_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="首页" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_video"
+            style="@style/lin_home_style">
+
+            <ImageView
+                android:id="@+id/video_frag_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/b_newvideo_tabbar"/>
+
+            <TextView
+                android:id="@+id/video_frag_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="阳光宽频" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_attention"
+            style="@style/lin_home_style">
+
+            <ImageView
+                android:id="@+id/attention_frag_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/b_newcare_tabbar"/>
+
+            <TextView
+                android:id="@+id/attention_frag_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="关注" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_log"
+            style="@style/lin_home_style">
+
+            <ImageView
+                android:id="@+id/log_frag_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/b_newmine_tabbar"/>
+
+            <TextView
+                android:id="@+id/log_frag_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="未登录" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
