@@ -1,1 +1,1 @@
-include ':app', ':librarypulltorefresh', ':imageloader', ':PushSDK', ':jcvideoplayer-lib', ':libraryslidingmenu'
+include ':app', ':librarypulltorefresh', ':imageloader', ':PushSDK', ':jcvideoplayer-lib', ':libraryslidingmenu', ':libraryslidingmenu1'

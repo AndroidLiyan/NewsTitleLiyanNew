@@ -219,6 +219,7 @@
         android:layout_marginLeft="10dp"
         android:background="@color/colorGrey"/>
     <RelativeLayout
+        android:id="@+id/shezhi"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/itemback">

@@ -13,11 +13,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bwie.newstitleliyannew.R;
 import com.bwie.newstitleliyannew.activity.MainActivity;
+import com.bwie.newstitleliyannew.activity.SetActivity;
 import com.bwie.newstitleliyannew.application.App;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.tencent.connect.UserInfo;
@@ -54,6 +56,7 @@ public class LogFragment extends Fragment {
     private String scope; //获取信息的范围参数
     private ImageView loginFrag_headImage;
     private TextView login_name;
+    private RelativeLayout shezhi;
 
 
     @Nullable
@@ -68,6 +71,7 @@ public class LogFragment extends Fragment {
         yeJian = (ImageView) view.findViewById(R.id.yeJian);
         loginFrag_headImage = (ImageView) view.findViewById(R.id.LoginFrag_headImage);
         login_name = (TextView) view.findViewById(R.id.login_name);
+        shezhi = (RelativeLayout) view.findViewById(R.id.shezhi);
         return view;
     }
 
@@ -100,6 +104,13 @@ public class LogFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 login();
+            }
+        });
+        shezhi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(getActivity(), SetActivity.class);
+                startActivity(it);
             }
         });
 

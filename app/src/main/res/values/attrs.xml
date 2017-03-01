@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Titlesbar">
+        <attr name="titlebar_btn_image" format="reference"></attr>
+        <attr name="titlebar_title" format="string"></attr>
+    </declare-styleable>
+</resources>

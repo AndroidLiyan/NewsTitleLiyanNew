@@ -20,6 +20,7 @@ import com.bwie.newstitleliyannew.fragment.HomeFragment;
 import com.bwie.newstitleliyannew.fragment.LogFragment;
 import com.bwie.newstitleliyannew.fragment.LoveFragment;
 import com.bwie.newstitleliyannew.fragment.VideoFragment;
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.umeng.message.PushAgent;
 
 import java.util.ArrayList;
@@ -49,6 +50,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //getDelegate();
         PushAgent.getInstance(this).onAppStart();
         initView();
+        slidingmenu();
+
     }
 
     private void initView() {
@@ -88,6 +91,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else {
             rbColor(3);
         }
+    }
+
+    private void slidingmenu(){
+        SlidingMenu slidingMenu = new SlidingMenu(this);
+        slidingMenu.setMode(SlidingMenu.LEFT);
+        slidingMenu.setBehindOffsetRes(R.dimen.slidingmenu);
+        slidingMenu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
+        slidingMenu.setMenu(R.layout.slidingment_layout);
     }
 
     @Override

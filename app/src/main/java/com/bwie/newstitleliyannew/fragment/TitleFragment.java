@@ -57,7 +57,9 @@ public class TitleFragment extends Fragment implements PullToRefreshBase.OnRefre
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent it = new Intent(getActivity(), WebviewActivity.class);
                 String url_3w = adapter.getItem(i).getUrl_3w();
+                String title = adapter.getItem(i).getTitle();
                 it.putExtra("url", url_3w);
+                it.putExtra("title", title);
                 startActivity(it);
             }
         });

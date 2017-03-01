@@ -34,4 +34,5 @@ dependencies {
     compile 'fm.jiecao:jiecaovideoplayer:2.0'
     compile project(':PushSDK')
     compile files('libs/mta-sdk-1.6.2.jar')
+    compile project(':libraryslidingmenu1')
 }

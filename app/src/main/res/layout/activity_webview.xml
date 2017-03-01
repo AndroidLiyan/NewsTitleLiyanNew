@@ -3,8 +3,14 @@
     android:id="@+id/activity_webview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     android:orientation="vertical"
     >
+    <com.bwie.newstitleliyannew.custom.MyCustomTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        ></com.bwie.newstitleliyannew.custom.MyCustomTitleBar>
     <ProgressBar
         android:id="@+id/bar"
         android:layout_width="match_parent"

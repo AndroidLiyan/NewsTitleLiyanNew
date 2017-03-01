@@ -10,13 +10,16 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
 import com.bwie.newstitleliyannew.R;
+import com.bwie.newstitleliyannew.custom.MyCustomTitleBar;
 import com.umeng.message.PushAgent;
 
-public class WebviewActivity extends AppCompatActivity {
+public class WebviewActivity extends BaseActivity {
 
     private WebView webview;
     private ProgressBar bar;
     private String url;
+    private MyCustomTitleBar title_bar;
+    private String title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +28,18 @@ public class WebviewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_webview);
         Intent it = getIntent();
         url = it.getStringExtra("url");
+        title = it.getStringExtra("title");
         webview = (WebView) findViewById(R.id.webview);
         bar = (ProgressBar) findViewById(R.id.bar);
+        title_bar = (MyCustomTitleBar) findViewById(R.id.title_bar);
         setwebView();
+        title_bar.setTitlrText(title);
+        title_bar.setbtnOnClickLister(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
     //设置webview
     private void setwebView() {

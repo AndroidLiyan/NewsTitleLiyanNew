@@ -3,9 +3,9 @@
     package="com.bwie.newstitleliyannew">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -24,37 +24,39 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.WebviewActivity" />
-        <activity android:name=".activity.ImageActivity"></activity>
-        <activity android:name=".activity.ChannerActivity"></activity>
-        <!--tuisong-->
+        <activity android:name=".activity.ImageActivity" />
+        <activity android:name=".activity.ChannerActivity" />
+        <activity android:name=".activity.SetActivity"/>
+        <!-- tuisong -->
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="58abb7e4677baa0131000c5e"></meta-data>
+            android:value="58abb7e4677baa0131000c5e" />
         <meta-data
             android:name="UMENG_MESSAGE_SECRET"
-            android:value="af5152e251b14f5cba8760350c4a25c9"></meta-data>
+            android:value="af5152e251b14f5cba8760350c4a25c9" />
         <meta-data
             android:name="UMENG_CHANNEL"
-            android:value="Channel ID"></meta-data>
-        <!--tuisong-->
-        <!--denglu-->
+            android:value="Channel ID" />
+        <!-- tuisong -->
+        <!-- denglu -->
         <activity
             android:name="com.tencent.tauth.AuthActivity"
-            android:noHistory="true"
-            android:launchMode="singleTask" >
+            android:launchMode="singleTask"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data android:scheme="1105933117" />
             </intent-filter>
         </activity>
-        <activity android:name="com.tencent.connect.common.AssistActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            />
-        <!--denglu-->
-
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- denglu -->
     </application>
 
 </manifest>

@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/jcvideoplayer-lib/jcvideoplayer-lib.iml" filepath="$PROJECT_DIR$/jcvideoplayer-lib/jcvideoplayer-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/librarypulltorefresh/librarypulltorefresh.iml" filepath="$PROJECT_DIR$/librarypulltorefresh/librarypulltorefresh.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraryslidingmenu/libraryslidingmenu.iml" filepath="$PROJECT_DIR$/libraryslidingmenu/libraryslidingmenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraryslidingmenu1/libraryslidingmenu1.iml" filepath="$PROJECT_DIR$/libraryslidingmenu1/libraryslidingmenu1.iml" />
     </modules>
   </component>
 </project>

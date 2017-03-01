@@ -25,7 +25,7 @@ import com.bwie.newstitleliyannew.view.MyGridView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChannerActivity extends AppCompatActivity implements OnItemClickListener {
+public class ChannerActivity extends BaseActivity implements OnItemClickListener {
     private MyGridView mOtherGv;
     private DragGridView mUserGv;
     private List<String> mUserList = new ArrayList<>();
