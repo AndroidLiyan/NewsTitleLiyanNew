@@ -23,10 +23,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.WebviewActivity" />
+        <activity android:name=".activity.WebviewActivity"
+            android:label="WebviewActivity"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme"/>
         <activity android:name=".activity.ImageActivity" />
-        <activity android:name=".activity.ChannerActivity" />
-        <activity android:name=".activity.SetActivity"/>
+        <activity android:name=".activity.ChannerActivity"
+            android:label="ChannerActivity"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme"/>
+        <activity android:name=".activity.SetActivity"
+            android:label="SetActivity"
+            android:theme="@style/JK.SwipeBack.Transparent.Theme"/>
         <!-- tuisong -->
         <meta-data
             android:name="UMENG_APPKEY"

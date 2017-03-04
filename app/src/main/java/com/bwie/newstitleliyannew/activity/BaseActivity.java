@@ -49,7 +49,7 @@ public abstract class BaseActivity extends AppCompatActivity implements SlidingP
 
             ViewGroup decor = (ViewGroup) getWindow().getDecorView();
             ViewGroup decorChild = (ViewGroup) decor.getChildAt(0);
-            decorChild.setBackgroundResource(android.R.color.transparent);
+            decorChild.setBackgroundResource(android.R.color.white);
             decor.removeView(decorChild);
             decor.addView(slidingPaneLayout);
             slidingPaneLayout.addView(decorChild, 1);
